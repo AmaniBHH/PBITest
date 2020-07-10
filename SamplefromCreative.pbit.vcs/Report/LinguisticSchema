@@ -1,0 +1,9 @@
+<LinguisticSchema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/sqlserver/2016/01/linguisticschema" Language="en-US" DynamicImprovement="Default">
+  <Entities>
+    <Entity ConceptualEntity="Pod1" Source="Generated" Name="Overview">
+      <Words>
+        <Word>Overview</Word>
+      </Words>
+    </Entity>
+  </Entities>
+</LinguisticSchema>
