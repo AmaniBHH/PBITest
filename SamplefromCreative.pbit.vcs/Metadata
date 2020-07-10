@@ -1,4 +1,4 @@
-b'\x04\x00\x00\x00\x00\x00\x00\x00\r\x00\x00\x00\x0b
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x0c\x00\x00\x00\x0b
 Association$1962b83a-7b2e-45b8-899d-aae4331673a1\x05
 Sales$f73f685a-3133-4df5-9eac-a889e8140e8f\x05
 Store$f1746d41-48af-4748-a581-103379c49b8e\x08
@@ -8,8 +8,8 @@ Analysis DAX$67334ddb-2ca7-4df2-aa43-24423a295af6\nDesign DAX$9eaaf4e6-b99a-4202
 Customer$2fe0858c-886a-44c1-9826-2f17b53c5335\x15
 Issues and Promotions$25382b81-13a6-4d19-8b0b-fcb915cff321\x06
 STable$00e49c25-f4fd-4d1b-a361-d1971144e645\x0c
-Tooltip Info$96ad535a-2cb7-4d94-876e-78d58cd41f9a\rTooltip Info2$e807b3a8-7e35-4c25-9410-dca9bdb57fd2\x07
-Details$cd823783-8fa4-4630-9cb6-ee803cd39e12\r\x00\x00\x00
+Tooltip Info$96ad535a-2cb7-4d94-876e-78d58cd41f9a\x07
+Details$cd823783-8fa4-4630-9cb6-ee803cd39e12\x0c\x00\x00\x00
 $1962b83a-7b2e-45b8-899d-aae4331673a1\x0b
 Association$f73f685a-3133-4df5-9eac-a889e8140e8f\x05
 Sales$f1746d41-48af-4748-a581-103379c49b8e\x05
@@ -20,7 +20,7 @@ Analysis DAX$9eaaf4e6-b99a-4202-b751-21c2d740bdf3\nDesign DAX$2fe0858c-886a-44c1
 Customer$25382b81-13a6-4d19-8b0b-fcb915cff321\x15
 Issues and Promotions$00e49c25-f4fd-4d1b-a361-d1971144e645\x06
 STable$96ad535a-2cb7-4d94-876e-78d58cd41f9a\x0c
-Tooltip Info$e807b3a8-7e35-4c25-9410-dca9bdb57fd2\rTooltip Info2$cd823783-8fa4-4630-9cb6-ee803cd39e12\x07
+Tooltip Info$cd823783-8fa4-4630-9cb6-ee803cd39e12\x07
 Details\x01\x04
 test\x01\x05
 Cloud\x01\x07

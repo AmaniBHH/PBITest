@@ -476,39 +476,6 @@
     <Item>
       <ItemLocation>
         <ItemType>Formula</ItemType>
-        <ItemPath>Section1/Tooltip%20Info2</ItemPath>
-      </ItemLocation>
-      <StableEntries>
-        <Entry Type="IsPrivate" Value="l0"/>
-        <Entry Type="IsDirectQuery" Value="l0"/>
-        <Entry Type="NavigationStepName" Value="sNavigation"/>
-        <Entry Type="NameUpdatedAfterFill" Value="l1"/>
-        <Entry Type="ResultType" Value="sTable"/>
-        <Entry Type="BufferNextRefresh" Value="l0"/>
-        <Entry Type="FillColumnNames" Value="s[&quot;Nombre&quot;,&quot;URL&quot;,&quot;DLINK&quot;]"/>
-        <Entry Type="RelationshipInfoContainer" Value="s{&quot;columnCount&quot;:3,&quot;keyColumnNames&quot;:[],&quot;queryRelationships&quot;:[],&quot;columnIdentities&quot;:[&quot;Section1/Tooltip Info2/Changed Type.{Nombre,0}&quot;,&quot;Section1/Tooltip Info2/Changed Type.{URL,1}&quot;,&quot;Section1/Tooltip Info2/Changed Type.{DLINK,2}&quot;],&quot;ColumnCount&quot;:3,&quot;KeyColumnNames&quot;:[],&quot;ColumnIdentities&quot;:[&quot;Section1/Tooltip Info2/Changed Type.{Nombre,0}&quot;,&quot;Section1/Tooltip Info2/Changed Type.{URL,1}&quot;,&quot;Section1/Tooltip Info2/Changed Type.{DLINK,2}&quot;],&quot;RelationshipInfo&quot;:[]}"/>
-        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\&quot;i45W8kstUQhOzEktVtBVCIwpNTAwMnNU0lHKKCkpKLbS18/MTUxPLc5ITM7WS87P1c/UL8gPKC8IzyhIR1OUWZVapIeuOjfd0shE39zU0kAfoksvPTNNKVYnWikotaS0KI9oS3PDvXLyAlOJttRI38LM1EgfogtiaSwA\&quot;, BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type text) meta [Serialized.Text = true]) in type table [Nombre = _t, URL = _t, DLINK = _t]),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(Source,{{\&quot;Nombre\&quot;, type text}, {\&quot;URL\&quot;, type text}, {\&quot;DLINK\&quot;, type text}})\r\nin\r\n    #\&quot;Changed Type\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}"/>
-        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1"/>
-        <Entry Type="LoadedToAnalysisServices" Value="l1"/>
-      </StableEntries>
-    </Item>
-    <Item>
-      <ItemLocation>
-        <ItemType>Formula</ItemType>
-        <ItemPath>Section1/Tooltip%20Info2/Source</ItemPath>
-      </ItemLocation>
-      <StableEntries/>
-    </Item>
-    <Item>
-      <ItemLocation>
-        <ItemType>Formula</ItemType>
-        <ItemPath>Section1/Tooltip%20Info2/Changed%20Type</ItemPath>
-      </ItemLocation>
-      <StableEntries/>
-    </Item>
-    <Item>
-      <ItemLocation>
-        <ItemType>Formula</ItemType>
         <ItemPath>Section1/Details</ItemPath>
       </ItemLocation>
       <StableEntries>
@@ -547,14 +514,15 @@
       <StableEntries>
         <Entry Type="IsPrivate" Value="l0"/>
         <Entry Type="IsDirectQuery" Value="l0"/>
-        <Entry Type="ResultType" Value="sTable"/>
         <Entry Type="NameUpdatedAfterFill" Value="l1"/>
-        <Entry Type="NavigationStepName" Value="sNavigation"/>
+        <Entry Type="ResultType" Value="sTable"/>
+        <Entry Type="BufferNextRefresh" Value="l1"/>
         <Entry Type="FillColumnNames" Value="s[&quot;Product&quot;,&quot;ProductID&quot;,&quot;Category&quot;,&quot;CategoryID&quot;,&quot;Segment&quot;,&quot;SegmentID&quot;,&quot;Product Image&quot;,&quot;Category Image&quot;,&quot;Segement Color&quot;,&quot;Segment image&quot;,&quot;Price&quot;,&quot;Price Range&quot;]"/>
         <Entry Type="RelationshipInfoContainer" Value="s{&quot;columnCount&quot;:12,&quot;keyColumnNames&quot;:[],&quot;queryRelationships&quot;:[],&quot;columnIdentities&quot;:[&quot;Section1/Product/Changed Type.{Product,0}&quot;,&quot;Section1/Product/Changed Type.{ProductID,1}&quot;,&quot;Section1/Product/Changed Type.{Category,2}&quot;,&quot;Section1/Product/Changed Type.{CategoryID,3}&quot;,&quot;Section1/Product/Changed Type.{Segment,4}&quot;,&quot;Section1/Product/Changed Type.{SegmentID,5}&quot;,&quot;Section1/Product/Changed Type.{Product Image,6}&quot;,&quot;Section1/Product/Changed Type.{Category Image,7}&quot;,&quot;Section1/Product/Changed Type.{Segement Color,8}&quot;,&quot;Section1/Product/Changed Type.{Segment image,9}&quot;,&quot;Section1/Product/Changed Type.{Price,10}&quot;,&quot;Section1/Product/Changed Type.{Price Range,11}&quot;],&quot;ColumnCount&quot;:12,&quot;KeyColumnNames&quot;:[],&quot;ColumnIdentities&quot;:[&quot;Section1/Product/Changed Type.{Product,0}&quot;,&quot;Section1/Product/Changed Type.{ProductID,1}&quot;,&quot;Section1/Product/Changed Type.{Category,2}&quot;,&quot;Section1/Product/Changed Type.{CategoryID,3}&quot;,&quot;Section1/Product/Changed Type.{Segment,4}&quot;,&quot;Section1/Product/Changed Type.{SegmentID,5}&quot;,&quot;Section1/Product/Changed Type.{Product Image,6}&quot;,&quot;Section1/Product/Changed Type.{Category Image,7}&quot;,&quot;Section1/Product/Changed Type.{Segement Color,8}&quot;,&quot;Section1/Product/Changed Type.{Segment image,9}&quot;,&quot;Section1/Product/Changed Type.{Price,10}&quot;,&quot;Section1/Product/Changed Type.{Price Range,11}&quot;],&quot;RelationshipInfo&quot;:[]}"/>
         <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Excel.Workbook(File.Contents(\&quot;C:\\Users\\AmaniBenHadjHassen\\Documents\\Sales \u0026 Marketing Datas.xlsx\&quot;), null, true),\r\n    Product_Sheet = Source{[Item=\&quot;Product\&quot;,Kind=\&quot;Sheet\&quot;]}[Data],\r\n    #\&quot;Promoted Headers\&quot; = Table.PromoteHeaders(Product_Sheet, [PromoteAllScalars=true]),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(#\&quot;Promoted Headers\&quot;,{{\&quot;Product\&quot;, type text}, {\&quot;ProductID\&quot;, Int64.Type}, {\&quot;Category\&quot;, type text}, {\&quot;CategoryID\&quot;, Int64.Type}, {\&quot;Segment\&quot;, type text}, {\&quot;SegmentID\&quot;, Int64.Type}, {\&quot;Product Image\&quot;, type text}, {\&quot;Category Image\&quot;, type text}, {\&quot;Segement Color\&quot;, type text}, {\&quot;Segment image\&quot;, type text}, {\&quot;Price\&quot;, Int64.Type}, {\&quot;Price Range\&quot;, type text}})\r\nin\r\n    #\&quot;Changed Type\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}"/>
         <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1"/>
         <Entry Type="LoadedToAnalysisServices" Value="l1"/>
+        <Entry Type="NavigationStepName" Value="sNavigation"/>
       </StableEntries>
     </Item>
     <Item>
