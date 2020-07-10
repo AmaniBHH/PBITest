@@ -14,101 +14,6 @@
             "type": 202,
             "path": "BaseThemes/CY19SU06.json",
             "name": "CY19SU06"
-          },
-          {
-            "type": 202,
-            "path": "BaseThemes/CY19SU12.json",
-            "name": "CY19SU12"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/Bloom.json",
-            "name": "Bloom"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/CityPark.json",
-            "name": "CityPark"
-          },
-          {
-            "type": 202,
-            "path": "BaseThemes/CY18SU07.json",
-            "name": "CY18SU07"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/Classroom.json",
-            "name": "Classroom"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/ColorblindSafe.json",
-            "name": "ColorblindSafe"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/Divergent.json",
-            "name": "Divergent"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/Electric.json",
-            "name": "Electric"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/NewExecutive.json",
-            "name": "NewExecutive"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/Frontier.json",
-            "name": "Frontier"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/HighContrast.json",
-            "name": "HighContrast"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/Highrise.json",
-            "name": "Highrise"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/Innovate.json",
-            "name": "Innovate"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/Solar.json",
-            "name": "Solar"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/Storm.json",
-            "name": "Storm"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/Sunset.json",
-            "name": "Sunset"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/Temperature.json",
-            "name": "Temperature"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/Tidal.json",
-            "name": "Tidal"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/Twilight.json",
-            "name": "Twilight"
           }
         ],
         "disabled": false
@@ -3668,7 +3573,7 @@
                       "queryRef": "Analysis DAX.Last 2 Months Net Sales"
                     },
                     {
-                      "queryRef": "Analysis DAX.Last 2 Months Returns"
+                      "queryRef": "Analysis DAX.Net Sales Variance"
                     }
                   ]
                 },
@@ -3699,9 +3604,9 @@
                             "Source": "a"
                           }
                         },
-                        "Property": "Last 2 Months Returns"
+                        "Property": "Net Sales"
                       },
-                      "Name": "Analysis DAX.Last 2 Months Returns"
+                      "Name": "Analysis DAX.Net Sales"
                     },
                     {
                       "Measure": {
@@ -3710,9 +3615,9 @@
                             "Source": "a"
                           }
                         },
-                        "Property": "Net Sales"
+                        "Property": "Net Sales Variance"
                       },
-                      "Name": "Analysis DAX.Net Sales"
+                      "Name": "Analysis DAX.Net Sales Variance"
                     }
                   ],
                   "OrderBy": [
@@ -3887,9 +3792,9 @@
                                 "Source": "a"
                               }
                             },
-                            "Property": "Last 2 Months Returns"
+                            "Property": "Net Sales"
                           },
-                          "Name": "Analysis DAX.Last 2 Months Returns"
+                          "Name": "Analysis DAX.Net Sales"
                         },
                         {
                           "Measure": {
@@ -3898,9 +3803,9 @@
                                 "Source": "a"
                               }
                             },
-                            "Property": "Net Sales"
+                            "Property": "Net Sales Variance"
                           },
-                          "Name": "Analysis DAX.Net Sales"
+                          "Name": "Analysis DAX.Net Sales Variance"
                         }
                       ],
                       "Where": [
@@ -4023,9 +3928,9 @@
               },
               "projectionOrdering": {
                 "Values": [
-                  2,
+                  1,
                   0,
-                  1
+                  2
                 ]
               },
               "queryMetadata": {
@@ -4037,16 +3942,57 @@
                     "Format": "0"
                   },
                   {
-                    "Restatement": "Last 2 Months Returns",
-                    "Name": "Analysis DAX.Last 2 Months Returns",
-                    "Type": 1,
-                    "Format": "0"
-                  },
-                  {
                     "Restatement": "Net Sales",
                     "Name": "Analysis DAX.Net Sales",
                     "Type": 1,
                     "Format": "\\$#,0;-\\$#,0;\\$#,0"
+                  },
+                  {
+                    "Restatement": "Net Sales Variance",
+                    "Name": "Analysis DAX.Net Sales Variance",
+                    "Type": 1,
+                    "Format": "\\$#,0;-\\$#,0;\\$#,0"
+                  }
+                ],
+                "Filters": [
+                  {
+                    "type": 2,
+                    "expression": {
+                      "Measure": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Analysis DAX"
+                          }
+                        },
+                        "Property": "Last 2 Months Net Sales"
+                      }
+                    }
+                  },
+                  {
+                    "type": 2,
+                    "expression": {
+                      "Measure": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Analysis DAX"
+                          }
+                        },
+                        "Property": "Net Sales"
+                      }
+                    }
+                  },
+                  {
+                    "type": 2,
+                    "expression": {
+                      "Measure": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Analysis DAX"
+                          }
+                        },
+                        "Property": "Net Sales Variance"
+                      }
+                    }
                   }
                 ]
               },
@@ -4055,7 +4001,7 @@
                   "DataRoles": [
                     {
                       "Name": "Values",
-                      "Projection": 2,
+                      "Projection": 1,
                       "isActive": false
                     },
                     {
@@ -4065,7 +4011,7 @@
                     },
                     {
                       "Name": "Values",
-                      "Projection": 1,
+                      "Projection": 2,
                       "isActive": false
                     }
                   ]
@@ -4095,28 +4041,6 @@
                   }
                 },
                 {
-                  "displayName": "Last 2 Months Returns",
-                  "format": "0",
-                  "queryName": "Analysis DAX.Last 2 Months Returns",
-                  "roles": {
-                    "Values": true
-                  },
-                  "type": {
-                    "category": null,
-                    "underlyingType": 258
-                  },
-                  "expr": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Analysis DAX"
-                        }
-                      },
-                      "Property": "Last 2 Months Returns"
-                    }
-                  }
-                },
-                {
                   "displayName": "Net Sales",
                   "format": "\\$#,0;-\\$#,0;\\$#,0",
                   "queryName": "Analysis DAX.Net Sales",
@@ -4137,6 +4061,28 @@
                         }
                       },
                       "Property": "Net Sales"
+                    }
+                  }
+                },
+                {
+                  "displayName": "Net Sales Variance",
+                  "format": "\\$#,0;-\\$#,0;\\$#,0",
+                  "queryName": "Analysis DAX.Net Sales Variance",
+                  "roles": {
+                    "Values": true
+                  },
+                  "type": {
+                    "category": null,
+                    "underlyingType": 258
+                  },
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Analysis DAX"
+                        }
+                      },
+                      "Property": "Net Sales Variance"
                     }
                   }
                 }
